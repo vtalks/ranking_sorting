@@ -5,7 +5,6 @@ import time
 def hackernews_hot(votes, published, gravity=1.8):
     """ Hackernews' hot sort
     """
-    gravity = 1.1
 
     try:
         d = time.time() - published
