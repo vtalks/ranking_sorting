@@ -10,5 +10,5 @@ class HackerNewsHotTest(unittest.TestCase):
         expected = 0.0021404697161564834
         published = datetime.datetime(year=2017, month=10, day=3, hour=17, minute=32, second=45)
         score = hackernews_hot.hackernews_hot(14520, published)
-        self.assertAlmostEqual(expected, score)
+        self.assertAlmostEqual(expected, score, places=5)
 
