@@ -1,5 +1,5 @@
 import unittest
-import time
+import datetime
 
 from ranking_sorting import hackernews_hot
 
@@ -7,9 +7,8 @@ from ranking_sorting import hackernews_hot
 class HackerNewsHotTest(unittest.TestCase):
 
     def test_hackernews_hot(self):
-        """
-        expected = 0
-        score = hackernews_hot.hackernews_hot(14520, time.time()-1000.0)
-        self.assertEqual(score, expected)
-        """
-        pass
+        expected = 0.0021404697161564834
+        published = datetime.datetime(year=2017, month=10, day=3, hour=17, minute=32, second=45)
+        score = hackernews_hot.hackernews_hot(14520, published)
+        self.assertEqual(expected, score)
+
