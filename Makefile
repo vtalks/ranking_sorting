@@ -27,6 +27,7 @@ coverage-html:	## Generate coverage HTML report
 codecov:	## Generate codecov.io coverage report
 	codecov
 
+.PHONY: dist
 dist:		## Generate distribution packages
 	python3 setup.py sdist bdist_wheel
 
