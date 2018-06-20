@@ -2,6 +2,7 @@
 
 Ranking and Sorting algorithms for vtalks.net
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![CircleCI](https://circleci.com/gh/vtalks/ranking_sorting.svg?style=svg)](https://circleci.com/gh/vtalks/ranking_sorting)
 [![codecov](https://codecov.io/gh/vtalks/ranking_sorting/branch/master/graph/badge.svg)](https://codecov.io/gh/vtalks/ranking_sorting)
 
