@@ -17,4 +17,4 @@ jobs:
             . .venv/bin/activate
             make test
             make cover
-            make coveralls
+            make codecov
