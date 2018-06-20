@@ -23,9 +23,9 @@ coverage-html:	cover
 coverage-html:	## Generate coverage HTML report
 	coverage3 html --directory=.cover --omit=*.venv*,setup.py
 
-.PHONY: coveralls
-coveralls:	## Generate coveralls.io coverage report
-	coveralls --data_file=.coverage --coveralls_yaml=.coveralls.yml --base_dir=./ranking_sorting
+.PHONY: codecov
+codecov:	## Generate codecov.io coverage report
+	codecov
 
 dist:		## Generate distribution packages
 	python3 setup.py sdist bdist_wheel
