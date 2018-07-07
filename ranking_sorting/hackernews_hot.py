@@ -4,7 +4,7 @@ from datetime import timezone
 
 
 def hackernews_hot(votes, published, gravity=1.8):
-    """ Hackernews' hot sort
+    """ Hacker news' hot sort
     """
 
     d = datetime.datetime.now(timezone.utc) - published
