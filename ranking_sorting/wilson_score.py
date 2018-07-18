@@ -7,7 +7,7 @@ def wilson_score(ups, downs, z=1.96):
     http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
     """
     if ups == 0:
-        return 0
+        return 0.0
     n = ups + downs
     p = ups / n
     sqrtexpr = (p * (1 - p) + z * z / (4 * n)) / n
